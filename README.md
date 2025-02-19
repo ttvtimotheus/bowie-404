@@ -1,70 +1,102 @@
-# Getting Started with Create React App
+# Bowie 404 - A Space Oddity
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![React Version](https://img.shields.io/badge/React-18.x-61DAFB?style=flat-square&logo=react)
+![SCSS](https://img.shields.io/badge/SCSS-Powered-CC6699?style=flat-square&logo=sass)
+![License](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)
 
-## Available Scripts
+A cosmic 404 error page inspired by the legendary David Bowie. This isn't just any error page – it's a tribute to the Starman himself, featuring animated lyrics, cosmic design elements, and references to Bowie's iconic aesthetic.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Rotating Bowie lyrics and song titles
+- Animated lightning bolt inspired by Aladdin Sane
+- Dynamic starry background effect
+- Gradient color schemes from Bowie's iconic looks
+- Fully responsive design
+- Built with React and SCSS
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Live Demo
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+[View the Demo](https://your-demo-url.here) - *Coming soon*
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/bowie-404.git
+```
 
-### `npm run build`
+2. Navigate to the project directory:
+```bash
+cd bowie-404
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Install dependencies:
+```bash
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Start the development server:
+```bash
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage
 
-### `npm run eject`
+Import the NotFound component into your React application:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```javascript
+import NotFound from './components/NotFound';
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+// Use it in your router or component
+<NotFound />
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Customization
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Changing the Phrases
 
-## Learn More
+Edit the `phrases` array in `NotFound.js` to add or modify the rotating text:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```javascript
+const phrases = [
+  "Life on Mars?",
+  "Ground Control to Major Tom",
+  // Add your own Bowie references
+];
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Modifying Styles
 
-### Code Splitting
+The styles are written in SCSS and can be found in `NotFound.scss`. Key customizable elements include:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Background gradients
+- Animation timings
+- Color schemes
+- Typography
 
-### Analyzing the Bundle Size
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Contributions are welcome! Feel free to:
 
-### Making a Progressive Web App
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## License
 
-### Advanced Configuration
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Acknowledgments
 
-### Deployment
+- Inspired by David Bowie's incredible artistry and style
+- Lightning bolt design inspired by the Aladdin Sane album cover
+- Color schemes derived from various Bowie eras
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p align="center">
+  Made with ⚡ by <a href="https://github.com/ttvtimotheus">Timo Haseloff</a>
+</p>
